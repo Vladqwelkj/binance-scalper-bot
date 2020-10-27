@@ -9,7 +9,7 @@ certifi==2019.11.28
 cffi==1.14.0
 chardet==3.0.4
 constantly==15.1.0
-cryptography==2.9
+cryptography==3.2
 dateparser==0.7.4
 Eel==0.11.0
 et-xmlfile==1.0.1
